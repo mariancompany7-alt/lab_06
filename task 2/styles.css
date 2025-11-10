@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    position: relative;
+    margin: 30px 300px;
+    width: 500px;
+    height: 250px;
+    border: none;
+}
+
+p {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.box-1 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(255, 143, 143);
+}
+
+.box-2 {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(255, 143, 143);
+}
+
+.box-1:hover {
+    transform: translate(0, 0) rotate(360deg);
+}
+
+@keyframes box-1 {
+    
+}
