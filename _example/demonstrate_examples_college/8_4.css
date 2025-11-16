@@ -1,0 +1,21 @@
+@keyframes go-left-right {        /* Оголошуємо і'мя анімації: "go-left-right" */
+    from { left: 0px; }             /* від: left: 0px */
+    to { left: calc(100% - 150px); } /* до: left: 100%-50px */
+  }
+
+  .progress {
+    animation: go-left-right 3s infinite alternate;
+    /* застосувати анімацію "go-left-right" до елемента
+       тривалістю 3 секунди
+       кількість раз: бескінечно (infinite)
+       міняти напрямок анімації кожен раз (alternate)
+    */
+
+    position: relative;
+    top: 100px;
+    border: 2px solid #0451f8;
+    width: 150px;
+    height: 50px;
+    background: #71a9f3;
+  }
+  
