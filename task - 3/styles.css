@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex; /* щоб вибудувати ел. в один ряд автоматично*/
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.card-1 {
+    position: relative;
+    background-color: #d7ecff;
+    width: 250px;
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 10px;
+    box-shadow: 10px 5px 5px grey;
+    text-align: center;
+    transition: all 0.5s linear;
+}
+
+/* .card-2 {
+    background-color: #d7ecff;
+    width: 250px;
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 10px 5px 5px grey;
+}
+
+.card-3 {
+    background-color: #d7ecff;
+    width: 250px;
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 10px 5px 5px grey;
+}
+
+.card-4 {
+    background-color: #d7ecff;
+    width: 250px;
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 10px 5px 5px grey;
+} */
+
+.p-1 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.card-1:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 15px 8px 8px grey;
+}
+
+.btn-1 {
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    width: 70px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 85%;
+    left: 36%;
+}
