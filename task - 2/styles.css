@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    position: relative;
+    margin: 30px 300px;
+    width: 500px;
+    height: 250px;
+    border: none;
+    perspective: 500px;
+}
+
+p {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.box-1 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(255, 143, 143);
+    border-radius: 3px;
+}
+
+.wrapper:hover .box-1 {
+    transform: rotateY(60deg);
+}
+
+.box-1 {
+    transform-origin: left center;
+    transition: all 0.5s linear;
+}
+
+.box-2 {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(255, 143, 143);
+    border-radius: 3px;
+}
+
+.wrapper:hover .box-2 {
+    transform: rotateY(-60deg);
+}
+
+.box-2 {
+    transform-origin: right center;
+    transition: all 0.5s linear;
+}
