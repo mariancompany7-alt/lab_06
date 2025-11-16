@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    width: 300px;
+    height: 300px;
+    border: 3px solid rgb(72, 146, 196);
+    border-radius: 300px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 7px;
+    height: 7px;
+    border: 3px solid rgb(72, 146, 196);
+    border-radius: 7px;
+    background-color: rgb(72, 146, 196);
+}
+
+.huge-stick {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 110px;
+    height: 1px;
+    border: 3px solid rgb(72, 146, 196);
+    border-radius: 3px;
+    background-color: rgb(72, 146, 196);
+    transform-origin: left;
+    animation: rotateHugeStick 120s linear infinite;
+}
+
+@keyframes rotateHugeStick {
+    from {
+        transform: translate(0%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(0%, -50%) rotate(360deg);
+    }
+}
+
+.small-stick {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 110px;
+    height: 1px;
+    border: 2px solid rgb(72, 146, 196);
+    border-radius: 1px;
+    background-color: rgb(72, 146, 196);
+    transform-origin: left;
+    animation: rotateSmallStick 2s linear infinite;
+}
+
+@keyframes rotateSmallStick {
+    from {
+        transform: translate(0%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(0%, -50%) rotate(360deg);
+    }
+}
