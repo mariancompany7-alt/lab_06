@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex; /* щоб вибудувати ел. в один ряд автоматично*/
+    position: relative;
+    top: 100px;
+    left: 80px;
+}
+
+.card {
+    position: relative;
+    background: linear-gradient(rgb(255, 220, 226), rgb(255, 255, 207));
+    width: 250px;
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: 40px;
+    padding: 10px;
+    box-shadow: 0px 0px 12px black;
+    text-align: center;
+    transition: all 0.5s linear;
+}
+
+.p {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.hr {
+    border-radius: 2px;
+}
+
+.hr-1 {
+    border: 2px solid red;
+}
+
+.hr-2 {
+    border: 2px solid rgb(255, 255, 0);
+}
+
+.hr-3 {
+    border: 2px solid rgb(76, 76, 255);
+}
+
+.hr-4 {
+    border: 2px solid rgb(74, 207, 74);
+}
+
+.price {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.per-month {
+    color: gray;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 10px 8px 8px grey;
+}
+
+.btn {
+    background-color: red;
+    color: white;
+    font-size: 25px;
+    width: 120px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 80%;
+    left: 28%;
+}
